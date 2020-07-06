@@ -30,7 +30,7 @@ public class PrefUtil {
         editor.apply();
     }
 
-    private static final String TIMER_STATE_ID = "com.example.cycle.timer_state";
+    private static final String TIMER_STATE_ID = "com.example.covidwasher.timer_state";
 
     public static MainActivity.TimerState getTimerState(Context context){
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
@@ -45,7 +45,7 @@ public class PrefUtil {
         editor.apply();
     }
 
-    private static final String  SECONDS_REMAINING_ID = "com.example.cycle.seconds_remaining";
+    private static final String  SECONDS_REMAINING_ID = "com.example.covidwasher.seconds_remaining";
 
     public static Long getSecondsRemaining(Context context){
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
@@ -58,7 +58,7 @@ public class PrefUtil {
         editor.apply();
     }
 
-    private static final String ALARM_SET_TIME_ID = "com.example.cycle.backgrounded_time";
+    private static final String ALARM_SET_TIME_ID = "com.example.covidwasher.backgrounded_time";
 
     public static Long getAlarmSetTime(Context context){
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
