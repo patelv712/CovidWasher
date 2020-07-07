@@ -12,7 +12,7 @@ public class PrefUtil {
     private static final String TIMER_LENGTH_ID = "com.example.timer.timer_length";
 
 
-    private static final String  PREVIOUS_TIMER_LENGTH_SECONDS_ID = "com.example.cycle.previous_timer_length";
+    private static final String  PREVIOUS_TIMER_LENGTH_SECONDS_ID = "com.example.covidwasher.previous_timer_length";
 
     public static int getTimerLength(Context context){
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
