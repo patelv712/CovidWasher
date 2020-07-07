@@ -181,7 +181,7 @@ public class MainActivity extends AppCompatActivity {
     private void startTimer(){
         timerState = TimerState.Running;
 
-        timer = new CountDownTimer(secondsRemaining*1000, 1000) {
+        timer = new CountDownTimer(secondsRemaining*1000, 20) {
             @Override
             public void onTick(long l) {
                 secondsRemaining = l / 1000;
@@ -197,7 +197,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void setNewTimerLength(){
         int lengthInMinutes = PrefUtil.getTimerLength(this);
-        timerLengthSeconds = (lengthInMinutes*60L);
+        timerLengthSeconds = (lengthInMinutes * 1L);
         progress_countdown.setMax(timerLengthSeconds.intValue());
     }
 
@@ -207,12 +207,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void updateCountdownUI(){
-        int minutesUntilFinished = secondsRemaining.intValue() / 60;
-        int secondsInMinuteUntilFinished = secondsRemaining.intValue() - minutesUntilFinished * 60;
-        String secondsStr = Integer.toString(secondsInMinuteUntilFinished);
-
-        String newStr = secondsStr.length()==2? secondsStr:"0"+secondsStr;
-        textView_countdown.setText(minutesUntilFinished+":"+newStr);
+        textView_countdown.setText(secondsRemaining.intValue()+":00");
 
         progress_countdown.setProgress((timerLengthSeconds.intValue()-secondsRemaining.intValue()));
     }

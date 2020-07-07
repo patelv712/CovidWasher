@@ -16,12 +16,12 @@ public class PrefUtil {
 
     public static int getTimerLength(Context context){
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
-        return preferences.getInt(TIMER_LENGTH_ID, 10);
+        return preferences.getInt(TIMER_LENGTH_ID, 1);
     }
 
     public static Long getPreviousTimerLengthSeconds(Context context){
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
-        return preferences.getLong(PREVIOUS_TIMER_LENGTH_SECONDS_ID, 0);
+        return preferences.getLong(PREVIOUS_TIMER_LENGTH_SECONDS_ID, 20);
     }
 
     public static void setPreviousTimerLengthSeconds(Long seconds, Context context){
