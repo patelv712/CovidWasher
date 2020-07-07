@@ -12,7 +12,10 @@ public class Welcome extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        understood = (Button) findViewById(R.id.bOK);
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_welcome);
+
+        understood = (Button) findViewById(R.id.bUnderstood);
         understood.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -21,12 +24,10 @@ public class Welcome extends AppCompatActivity {
         });
 
 
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_welcome);
     }
 
     public void goToCovidTimer() {
-        Intent intent = new Intent(this, Welcome.class);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 }
