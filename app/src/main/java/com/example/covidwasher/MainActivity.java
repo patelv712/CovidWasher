@@ -76,7 +76,6 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setIcon(R.drawable.ic_timer);
         getSupportActionBar().setTitle("    Timer");
 
-
         fab_start = (FloatingActionButton) findViewById(R.id.fab_start);
         fab_pause = (FloatingActionButton) findViewById(R.id.fab_pause);
         fab_stop = (FloatingActionButton) findViewById(R.id.fab_stop);

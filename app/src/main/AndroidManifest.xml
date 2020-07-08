@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.covidwasher">
 
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -49,6 +51,13 @@
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
+
+        <receiver
+            android:name=".NotiReci"
+            android:label="Notifications"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </receiver>
     </application>
 
 </manifest>
