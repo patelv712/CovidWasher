@@ -15,18 +15,19 @@ import android.util.Log;
 public class NotiReci extends BroadcastReceiver {
     private final String CHANNEL_ID = "Covid Notifications";
     private final int NOTIFICATION_ID = 001;
+    public boolean noti = false;
 
     @Override
     public void onReceive (Context context, Intent intent) {
-        createNotificationChannel(context);
-        NotificationManager notiMan = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
+
+            createNotificationChannel(context);
+            NotificationManager notiMan = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
 
 
-        Intent repeatingIntent = new Intent(context, MainActivity.class);
-        repeatingIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); //MainActivity will show up
+            Intent repeatingIntent = new Intent(context, MainActivity.class);
+            repeatingIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); //MainActivity will show up
 
-        PendingIntent pendingIntent = PendingIntent.getActivity(context, 100, repeatingIntent, PendingIntent.FLAG_UPDATE_CURRENT);
-
+            PendingIntent pendingIntent = PendingIntent.getActivity(context, 100, repeatingIntent, PendingIntent.FLAG_UPDATE_CURRENT);
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context, CHANNEL_ID)
                 .setContentIntent(pendingIntent)
                 .setSmallIcon(R.drawable.ic_notification)
@@ -36,12 +37,20 @@ public class NotiReci extends BroadcastReceiver {
                 .setAutoCancel(true); //make the notification invisible when user swipes*/
 
         NotificationManagerCompat notificationManagerCompat = NotificationManagerCompat.from(context);
-        notificationManagerCompat.notify(NOTIFICATION_ID,builder.build());
+        notificationManagerCompat.notify(NOTIFICATION_ID, builder.build());
 
 
     }
+    public void cancelNoti()
+    {
+        noti = false;
+    }
 
-    private void createNotificationChannel(Context context) {  //using API version 9.0, hence the need for notification channel
+    public void startNoti()
+    {
+        noti = true;
+    }
+    private void createNotificationChannel(Context context) {  //for devices w API version 26+ and Android 8+ hence the need for notification channel
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O)
         {
             CharSequence name = "Covid Notifications";
