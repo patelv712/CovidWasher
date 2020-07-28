@@ -1,4 +1,4 @@
-package com.example.covidwasher;
+package covid.washer.covidwasher;
 
 import org.junit.Test;
 

@@ -1,15 +1,12 @@
-package com.example.covidwasher;
+package covid.washer.covidwasher;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.support.annotation.RequiresApi;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -17,10 +14,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-import com.example.covidwasher.R;
-import com.example.covidwasher.SettingsActivity;
-import com.example.covidwasher.util.NotificationUtil;
-import com.example.covidwasher.util.PrefUtil;
+import covid.washer.covidwasher.R;
+
+import covid.washer.covidwasher.util.NotificationUtil;
+import covid.washer.covidwasher.util.PrefUtil;
 
 import java.util.Calendar;
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.covidwasher">
+    package="covid.washer.covidwasher">
 
     <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
 
@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Welcome"
+            android:name="covid.washer.covidwasher.Welcome"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
@@ -23,18 +23,18 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="covid.washer.covidwasher.MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
 
         <receiver
-            android:name=".TimerExpired"
+            android:name="covid.washer.covidwasher.TimerExpired"
             android:enabled="true"
             android:exported="false"></receiver>
         <receiver
-            android:name=".TimerNotification"
+            android:name="covid.washer.covidwasher.TimerNotification"
             android:enabled="true"
             android:exported="false">
             <intent-filter>
@@ -46,14 +46,14 @@
         </receiver>
 
         <activity
-            android:name=".SettingsActivity"
+            android:name="covid.washer.covidwasher.SettingsActivity"
             android:label="Settings"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName="covid.washer.covidwasher.MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
 
         <receiver
-            android:name=".NotiReci"
+            android:name="covid.washer.covidwasher.NotiReci"
             android:label="Notifications"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">

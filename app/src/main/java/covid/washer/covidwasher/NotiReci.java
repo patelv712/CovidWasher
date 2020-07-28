@@ -1,4 +1,4 @@
-package com.example.covidwasher;
+package covid.washer.covidwasher;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -6,11 +6,11 @@ import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.content.res.Resources;
 import android.os.Build;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.app.NotificationManagerCompat;
-import android.util.Log;
+
+import covid.washer.covidwasher.R;
 
 public class NotiReci extends BroadcastReceiver {
     private final String CHANNEL_ID = "Covid Notifications";

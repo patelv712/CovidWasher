@@ -1,4 +1,4 @@
-package com.example.covidwasher;
+package covid.washer.covidwasher;
 
 public class AppConstants {
     public static final String ACTION_STOP = "stop";

@@ -1,26 +1,17 @@
-package com.example.covidwasher;
+package covid.washer.covidwasher;
 
 import android.app.AlarmManager;
-import android.app.AlertDialog;
 import android.app.PendingIntent;
-import android.app.TimePickerDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.os.Build;
-import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.InputType;
 import android.view.Gravity;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
-import android.widget.Toolbar;
+
+import covid.washer.covidwasher.R;
 
 import java.util.Calendar;
 
@@ -30,7 +21,7 @@ public class SettingsActivity extends AppCompatActivity {
     Button notiD;
     NotiReci noti = new NotiReci();
     private String m_Text = "";
-   // private TimePicker timePicker;
+    private TimePicker timePicker;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +34,7 @@ public class SettingsActivity extends AppCompatActivity {
             public void onClick(View view) {
                 noti.cancelNoti();
                 Toast toast = Toast.makeText(getApplicationContext(),
-                        "Turn off notifications in settings",
+                        "Notifications are disabled",
                         Toast.LENGTH_SHORT);
                 toast.show();
                 toast.setGravity(Gravity.TOP | Gravity.CENTER_HORIZONTAL, 0, 500);
@@ -52,7 +43,7 @@ public class SettingsActivity extends AppCompatActivity {
         });
 
         notiE = (Button) findViewById(R.id.enableNoti);
-        //timePicker = (TimePicker)findViewById(R.id.startTime);
+        timePicker = (TimePicker)findViewById(R.id.startTime);
         notiE.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -73,11 +64,10 @@ public class SettingsActivity extends AppCompatActivity {
 
                 Calendar cal = Calendar.getInstance();
 
-                //temporary time until updates and bugs fixed
-                cal.set(Calendar.HOUR, cal.get(Calendar.HOUR));
-                cal.set(Calendar.MINUTE, cal.get(Calendar.MINUTE));
+               /* cal.set(Calendar.HOUR, timePicker.getHour());
+                cal.set(Calendar.MINUTE, timePicker.getMinute());
                 cal.set(Calendar.SECOND, 0);
-
+*/
                 Intent intent = new Intent(getApplicationContext(), NotiReci.class);
                 intent.setAction("TIME TO WASH HANDS!");
 

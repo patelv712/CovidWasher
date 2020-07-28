@@ -1,11 +1,10 @@
-package com.example.covidwasher.util;
+package covid.washer.covidwasher.util;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.preference.Preference;
 import android.preference.PreferenceManager;
 
-import com.example.covidwasher.MainActivity;
+import covid.washer.covidwasher.MainActivity;
 
 public class PrefUtil {
 

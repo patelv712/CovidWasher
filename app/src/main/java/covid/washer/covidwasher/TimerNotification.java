@@ -1,11 +1,11 @@
-package com.example.covidwasher;
+package covid.washer.covidwasher;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
-import com.example.covidwasher.util.NotificationUtil;
-import com.example.covidwasher.util.PrefUtil;
+import covid.washer.covidwasher.util.NotificationUtil;
+import covid.washer.covidwasher.util.PrefUtil;
 
 public class TimerNotification extends BroadcastReceiver {
 

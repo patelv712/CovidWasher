@@ -1,10 +1,12 @@
-package com.example.covidwasher;
+package covid.washer.covidwasher;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import covid.washer.covidwasher.R;
 
 public class Welcome extends AppCompatActivity {
 
