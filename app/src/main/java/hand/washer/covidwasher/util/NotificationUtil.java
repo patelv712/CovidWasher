@@ -1,4 +1,4 @@
-package covid.washer.covidwasher.util;
+package hand.washer.covidwasher.util;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -12,10 +12,10 @@ import android.net.Uri;
 import android.os.Build;
 import android.support.v4.app.NotificationCompat;
 
-import covid.washer.covidwasher.AppConstants;
-import covid.washer.covidwasher.MainActivity;
-import covid.washer.covidwasher.R;
-import covid.washer.covidwasher.TimerNotification;
+import hand.washer.covidwasher.AppConstants;
+import hand.washer.covidwasher.MainActivity;
+import hand.washer.covidwasher.R;
+import hand.washer.covidwasher.TimerNotification;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;

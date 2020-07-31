@@ -1,4 +1,4 @@
-package covid.washer.covidwasher;
+package hand.washer.covidwasher;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
@@ -14,10 +14,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-import covid.washer.covidwasher.R;
+import hand.washer.covidwasher.R;
 
-import covid.washer.covidwasher.util.NotificationUtil;
-import covid.washer.covidwasher.util.PrefUtil;
+import hand.washer.covidwasher.util.NotificationUtil;
+import hand.washer.covidwasher.util.PrefUtil;
 
 import java.util.Calendar;
 

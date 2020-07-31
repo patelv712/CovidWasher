@@ -1,10 +1,10 @@
-package covid.washer.covidwasher;
+package hand.washer.covidwasher;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
-import covid.washer.covidwasher.util.PrefUtil;
+import hand.washer.covidwasher.util.PrefUtil;
 
 public class TimerExpired extends BroadcastReceiver {
 

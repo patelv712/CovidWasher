@@ -1,4 +1,4 @@
-package covid.washer.covidwasher;
+package hand.washer.covidwasher;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
-import covid.washer.covidwasher.R;
+import hand.washer.covidwasher.R;
 
 import java.util.Calendar;
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="covid.washer.covidwasher.Welcome">
+    tools:context="hand.washer.covidwasher.Welcome">
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="416dp"
@@ -25,7 +25,7 @@
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="532dp"
             android:gravity="center_horizontal"
-            android:text="Welcome to Covid Washer!"
+            android:text="Welcome to Hand Washer!"
             android:textAlignment="center"
             android:textSize="40dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -42,7 +42,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
-            android:text="COVID-19 is a pandemic that has affected the United States. To help stop the rage of the pandemic, it is recommended that you wash your hands every 2 hours"
+            android:text="There is a pandemic that has affected the United States. To help stop the rage of the pandemic, it is recommended that you wash your hands every 2 hours"
             android:textSize="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

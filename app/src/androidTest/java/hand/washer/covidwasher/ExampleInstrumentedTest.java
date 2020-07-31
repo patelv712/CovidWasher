@@ -1,4 +1,4 @@
-package covid.washer.covidwasher;
+package hand.washer.covidwasher;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
