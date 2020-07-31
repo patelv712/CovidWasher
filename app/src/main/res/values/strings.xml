@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CovidWasher</string>
-    <string name= "channel_name">Covid Notification</string>
-    <string name = "channel_description">Covid Washer Notification System</string>
+    <string name="app_name">HandWasher</string>
+    <string name= "channel_name">Hand Washer Notification</string>
+    <string name = "channel_description">Hand Washer Notification System</string>
 </resources>
